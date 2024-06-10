@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#121212"
+    tools:context=".AssignmentsActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:indeterminateTint="#03DAC5" />
+
+    <TextView
+        android:id="@+id/tvUnsubmittedAssignments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unsubmitted Assignments"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="8dp" />
+
+    <ScrollView
+        android:id="@+id/scrollViewUnsubmitted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUnsubmittedAssignments"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/unsubmittedAssignmentsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvSubmittedAssignments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submitted Assignments"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/scrollViewUnsubmitted"
+        android:layout_marginTop="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <ScrollView
+        android:id="@+id/scrollViewSubmitted"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvSubmittedAssignments"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/submittedAssignmentsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</RelativeLayout>

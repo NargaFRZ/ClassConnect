@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="16dp"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:backgroundTint="#BB86FC"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BB86FC"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_below="@id/edtName"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:backgroundTint="#BB86FC"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BB86FC"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@id/edtUsername"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:backgroundTint="#BB86FC"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BB86FC"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_below="@id/edtPassword"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:backgroundTint="#BB86FC"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BB86FC"
+        android:inputType="textEmailAddress" />
+
+    <Spinner
+        android:id="@+id/spinnerRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtEmail"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:backgroundTint="#BB86FC" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@id/spinnerRole"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#121212"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:indeterminateTint="#03DAC5" />
+</RelativeLayout>

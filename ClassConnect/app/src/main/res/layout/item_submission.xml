@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/txtAssignmentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assignment ID"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Name"
+        android:textSize="14sp"
+        android:textColor="#BBBBBB" />
+
+    <TextView
+        android:id="@+id/txtSubmittedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submitted Date"
+        android:textSize="14sp"
+        android:textColor="#FF4081" />
+</LinearLayout>

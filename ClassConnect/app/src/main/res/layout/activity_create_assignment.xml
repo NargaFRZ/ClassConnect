@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#121212"
+    tools:context=".CreateAssignmentActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:indeterminateTint="#03DAC5" />
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BB86FC"
+        android:backgroundTint="#BB86FC"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/edtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BB86FC"
+        android:backgroundTint="#BB86FC"
+        android:padding="12dp"
+        android:layout_below="@id/edtTitle"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/edtDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due Date (YYYY-MM-DD)"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BB86FC"
+        android:backgroundTint="#BB86FC"
+        android:padding="12dp"
+        android:layout_below="@id/edtDescription"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnChooseFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose File"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:layout_below="@id/edtDueDate"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnCreateAssignment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Assignment"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:layout_below="@id/btnChooseFile" />
+</RelativeLayout>

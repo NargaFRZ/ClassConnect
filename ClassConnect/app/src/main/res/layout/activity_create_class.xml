@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#121212"
+    tools:context=".CreateClassActivity">
+
+    <EditText
+        android:id="@+id/edtClassName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Class Name"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:backgroundTint="#BB86FC"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BB86FC"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtClassDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Class Description"
+        android:layout_below="@id/edtClassName"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:backgroundTint="#BB86FC"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BB86FC"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/edtEnrollmentKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enrollment Key"
+        android:layout_below="@id/edtClassDescription"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:backgroundTint="#BB86FC"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BB86FC"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnCreateClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Class"
+        android:layout_below="@id/edtEnrollmentKey"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#121212"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:indeterminateTint="#03DAC5" />
+</RelativeLayout>

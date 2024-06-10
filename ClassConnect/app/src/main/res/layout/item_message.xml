@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:background="#1E1E1E">
+
+    <TextView
+        android:id="@+id/txtMessageSender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#BB86FC"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/txtMessageContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="4dp" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ClassConnect</string>
+
+    <string-array name="roles_array">
+        <item>Student</item>
+        <item>Teacher</item>
+    </string-array>
+</resources>

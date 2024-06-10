@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#121212"
+    tools:context=".ClassDetailsActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:indeterminateTint="#03DAC5" />
+
+    <TextView
+        android:id="@+id/txtClassName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Name"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:id="@+id/txtClassDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Description"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/txtClassName"
+        android:paddingBottom="8dp" />
+
+    <LinearLayout
+        android:id="@+id/enrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/txtClassDescription"
+        android:paddingBottom="16dp">
+
+        <EditText
+            android:id="@+id/edtEnrollmentKey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enrollment Key"
+            android:inputType="text"
+            android:backgroundTint="#BB86FC"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BB86FC"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnEnroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enroll"
+            android:backgroundTint="#03DAC5"
+            android:textColor="#121212"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/teacherButtonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/enrollContainer"
+        android:paddingBottom="16dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnTeachClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teach Class"
+            android:backgroundTint="#03DAC5"
+            android:textColor="#121212"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnAddAssignment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Assignment"
+            android:backgroundTint="#03DAC5"
+            android:textColor="#121212"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnViewSubmissions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Submissions"
+            android:backgroundTint="#03DAC5"
+            android:textColor="#121212"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnViewAssignments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Assignments"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:layout_below="@id/teacherButtonsContainer"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvClassMembers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Members:"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/btnViewAssignments"
+        android:paddingBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvClassMembers">
+
+        <LinearLayout
+            android:id="@+id/membersContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+</RelativeLayout>

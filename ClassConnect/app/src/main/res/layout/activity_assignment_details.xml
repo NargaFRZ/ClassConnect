@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#121212"
+    tools:context=".AssignmentDetailsActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:indeterminateTint="#03DAC5" />
+
+    <TextView
+        android:id="@+id/txtAssignmentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assignment Title"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:id="@+id/txtAssignmentDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assignment Description"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/txtAssignmentTitle"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/txtDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due Date"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/txtAssignmentDescription"
+        android:paddingBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnViewPDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View PDF"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:layout_below="@id/txtDueDate"/>
+
+    <Button
+        android:id="@+id/btnChooseFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose File"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:layout_below="@id/btnViewPDF"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSubmitAssignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Assignment"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:layout_below="@id/btnChooseFile"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnEditAssignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Assignment"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:layout_below="@id/btnSubmitAssignment"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnDeleteAssignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Assignment"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:layout_below="@id/btnEditAssignment"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnEditSubmission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Submission"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:layout_below="@id/btnDeleteAssignment"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnDeleteSubmission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Submission"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:layout_below="@id/btnEditSubmission"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnViewSubmission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Submission"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:layout_below="@id/btnDeleteSubmission"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+</RelativeLayout>
